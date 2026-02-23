@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <title>QCM Dev Informatique</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./DRH20240505.css">
+    <script src="./DRH20240505.js"></script>
+</head>
+<body>
+
+    <div>
+        <nav>
+            <input type="checkbox" id="check">
+
+            <label for="check" class="check-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <label class="logo"><a href="../../index.html" class="logo-link" >DevQuize</a></label>
+
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <h1>Quiz HPH</h1>
+        <br><br>
+        <div id="quiz">
+        <div class="question" id="question"></div>
+        <div class="answers" id="answers"></div>
+        <button onclick="nextQuestion()">Suivant</button>
+        </div>
+        <div class="result" id="result"></div>
+    </div>
+
+</body>
+</html>
