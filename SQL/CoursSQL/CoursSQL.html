@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM Dev Informatique</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./CoursSQL.css">
+</head>
+
+<body>
+
+    <div>
+        <nav>
+            <input type="checkbox" id="check">
+
+            <label for="check" class="check-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <label class="logo"><a href="../../index.html" class="logo-link">DevQuize</a></label>
+
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="course">
+        <div class="container">
+
+            <h1>What is SQL?</h1>
+
+            <p>
+                <strong>SQL (Structured Query Language)</strong> is the standard language
+                used to create, manage, and manipulate relational databases.
+                It allows users to store, retrieve, update, and delete data efficiently.
+            </p>
+
+            <h2>What Can You Do with SQL?</h2>
+
+            <ul>
+                <li>Create databases.</li>
+                <li>Create, modify, and delete tables.</li>
+                <li>Insert, update, and delete records.</li>
+                <li>Retrieve data using SQL queries.</li>
+                <li>Sort and filter data.</li>
+                <li>Group and summarize information.</li>
+                <li>Create indexes and views.</li>
+                <li>Manage users and database permissions.</li>
+                <li>Create database backups and restore them.</li>
+            </ul>
+
+            <h2>Why Learn SQL?</h2>
+
+            <p>
+                SQL is one of the most important programming languages for working with
+                relational databases such as MySQL, SQL Server, PostgreSQL, Oracle,
+                and SQLite. It is widely used in web development, data analysis,
+                business intelligence, and enterprise applications.
+            </p>
+
+            <h2>Popular Database Systems</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Database</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>MySQL</td>
+                        <td>Open-source relational database.</td>
+                    </tr>
+
+                    <tr>
+                        <td>SQL Server</td>
+                        <td>Microsoft relational database management system.</td>
+                    </tr>
+
+                    <tr>
+                        <td>PostgreSQL</td>
+                        <td>Advanced open-source relational database.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Oracle Database</td>
+                        <td>Enterprise-level relational database.</td>
+                    </tr>
+
+                    <tr>
+                        <td>SQLite</td>
+                        <td>Lightweight embedded database.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </section>
+
+    <section class="course-section">
+
+        <h1>CREATE DATABASE</h1>
+
+        <p>
+            The <strong>CREATE DATABASE</strong> statement is used to create a new database.
+        </p>
+
+        <h2>Syntax</h2>
+
+        <pre><code>  CREATE DATABASE database_name; </code></pre>
+
+        <h2>Example</h2>
+
+        <pre><code> CREATE DATABASE School; </code></pre>
+
+        <h2>Explanation</h2>
+
+        <ul>
+            <li><strong>CREATE DATABASE</strong> creates a new database.</li>
+            <li><strong>database_name</strong> is the name of the database to be created.</li>
+        </ul>
+        <br><br>
+
+        <h1>DROP DATABASE</h1>
+
+        <p>
+            The <strong>DROP DATABASE</strong> statement is used to delete an existing database.
+        </p>
+
+        <h2>Syntax</h2>
+
+        <pre><code> DROP DATABASE database_name; </code></pre>
+
+        <h2>Example</h2>
+
+        <pre><code> DROP DATABASE School; </code></pre>
+
+        <h2>Explanation</h2>
+
+        <ul>
+            <li><strong>DROP DATABASE</strong> permanently deletes a database.</li>
+            <li><strong>database_name</strong> is the name of the database to be deleted.</li>
+        </ul>
+
+        <h2>Note</h2>
+
+        <p>
+            <strong>Warning:</strong> Deleting a database is permanent. All tables and data inside the database will be
+            lost.
+        </p>
+
+        <br><br>
+
+        <h1>BACKUP DATABASE</h1>
+
+        <p>
+            The <strong>BACKUP DATABASE</strong> statement is used to create a backup copy of an existing database.
+        </p>
+
+        <h2>Syntax</h2>
+
+        <pre><code>
+BACKUP DATABASE database_name
+TO DISK = 'file_path';
+</code></pre>
+
+        <h2>Example</h2>
+
+        <pre><code>
+BACKUP DATABASE testDB
+TO DISK = 'D:\backups\testDB.bak';
+</code></pre>
+
+        <h2>Explanation</h2>
+
+        <ul>
+            <li><strong>BACKUP DATABASE</strong> creates a backup of the specified database.</li>
+            <li><strong>TO DISK</strong> specifies the location where the backup file will be saved.</li>
+            <li><strong>.bak</strong> is the standard extension for SQL Server backup files.</li>
+        </ul>
+
+        <h2>Note</h2>
+
+        <p>
+            The destination folder must exist, and the SQL Server service must have permission to write to the specified
+            location.
+        </p>
+
+
+        <br><br>
+
+        <h1>CREATE TABLE</h1>
+
+        <p>
+            The <strong>CREATE TABLE</strong> statement is used to create a new table in a database.
+        </p>
+
+        <h2>Syntax</h2>
+
+        <pre><code>
+CREATE TABLE table_name (
+    column1 datatype constraints,
+    column2 datatype constraints,
+    column3 datatype constraints,
+    ...
+);
+</code></pre>
+
+        <h2>Example</h2>
+
+        <pre><code>
+CREATE TABLE Employe (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    Nom VARCHAR(100) NOT NULL,
+    Prenom VARCHAR(100),
+    Email VARCHAR(255) UNIQUE,
+    Age INT CHECK (Age >= 18),
+    Salaire DECIMAL(10,2) DEFAULT 3000,
+    DateEmbauche DATE,
+    DepartementID INT,
+    FOREIGN KEY (DepartementID)
+        REFERENCES Departement(Id)
+);
+</code></pre>
+
+        <h2>Explanation</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Element</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>CREATE TABLE</td>
+                    <td>Creates a new table.</td>
+                </tr>
+
+                <tr>
+                    <td>IDENTITY(1,1)</td>
+                    <td>Automatically generates an incremental ID (SQL Server).</td>
+                </tr>
+
+                <tr>
+                    <td>PRIMARY KEY</td>
+                    <td>Uniquely identifies each record.</td>
+                </tr>
+
+                <tr>
+                    <td>NOT NULL</td>
+                    <td>Does not allow NULL values.</td>
+                </tr>
+
+                <tr>
+                    <td>UNIQUE</td>
+                    <td>Ensures all values are unique.</td>
+                </tr>
+
+                <tr>
+                    <td>CHECK</td>
+                    <td>Restricts the values allowed in a column.</td>
+                </tr>
+
+                <tr>
+                    <td>DEFAULT</td>
+                    <td>Sets a default value.</td>
+                </tr>
+
+                <tr>
+                    <td>FOREIGN KEY</td>
+                    <td>Creates a relationship with another table.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br><br>
+        <h1>DROP TABLE</h1>
+
+        <p>
+            The <strong>DROP TABLE</strong> statement is used to permanently delete an existing table from a database.
+        </p>
+
+        <h2>Syntax</h2>
+
+        <pre><code>
+DROP TABLE table_name;
+</code></pre>
+
+        <h2>Drop a Table Only If It Exists</h2>
+
+        <pre><code>
+DROP TABLE IF EXISTS table_name;
+</code></pre>
+
+        <h2>Example</h2>
+
+        <pre><code>
+DROP TABLE IF EXISTS Employe;
+</code></pre>
+
+        <h2>Explanation</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Element</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>DROP TABLE</td>
+                    <td>Deletes an existing table from the database.</td>
+                </tr>
+                <tr>
+                    <td>IF EXISTS</td>
+                    <td>Prevents an error if the table does not exist.</td>
+                </tr>
+                <tr>
+                    <td>table_name</td>
+                    <td>The name of the table to be deleted.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Note</h2>
+
+        <p>
+            <strong>Warning:</strong> Dropping a table permanently removes the table structure and all its data.
+        </p>
+
+
+        <br><br>
+        <h1>INSERT INTO</h1>
+
+        <p>
+            The <strong>INSERT INTO</strong> statement is used to insert new records into a table.
+        </p>
+
+        <h2>Syntax</h2>
+
+        <pre><code>
+INSERT INTO table_name (column1, column2, column3, ...)
+VALUES (value1, value2, value3, ...);
+</code></pre>
+
+        <h2>Example</h2>
+
+        <pre><code>
+INSERT INTO Persons (PersonID, LastName, FirstName, Address, City)
+VALUES (1, 'Naji', 'Ayoub', 'Hay Salam', 'Agadir');
+</code></pre>
+
+        <h2>Explanation</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Element</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>INSERT INTO</td>
+                    <td>Inserts a new record into a table.</td>
+                </tr>
+
+                <tr>
+                    <td>Persons</td>
+                    <td>The name of the table.</td>
+                </tr>
+
+                <tr>
+                    <td>(PersonID, LastName, FirstName, Address, City)</td>
+                    <td>The columns where the data will be inserted.</td>
+                </tr>
+
+                <tr>
+                    <td>VALUES</td>
+                    <td>Specifies the values to insert.</td>
+                </tr>
+
+                <tr>
+                    <td>(1, 'Naji', 'Ayoub', 'Hay Salam', 'Agadir')</td>
+                    <td>The data inserted into the new row.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Result</h2>
+
+        <p>A new record will be added to the <strong>Persons</strong> table.</p>
+
+
+        <br><br>
+
+        <h1>ALTER TABLE</h1>
+
+        <p>
+            The <strong>ALTER TABLE</strong> statement is used to add, delete, or modify columns in an existing table.
+        </p>
+
+        <h2>Add a Column</h2>
+
+        <p>Use the <strong>ADD</strong> statement to add a new column.</p>
+
+        <pre><code>
+ALTER TABLE table_name
+ADD column_name datatype;
+</code></pre>
+
+        <h3>Example</h3>
+
+        <pre><code>
+ALTER TABLE Persons
+ADD Email VARCHAR(255);
+</code></pre>
+
+        <hr>
+
+        <h2>Drop a Column</h2>
+
+        <p>Use the <strong>DROP COLUMN</strong> statement to delete an existing column.</p>
+
+        <pre><code>
+ALTER TABLE table_name
+DROP COLUMN column_name;
+</code></pre>
+
+        <h3>Example</h3>
+
+        <pre><code>
+ALTER TABLE Persons
+DROP COLUMN Email;
+</code></pre>
+
+        <hr>
+
+        <h2>Rename a Column</h2>
+
+        <p>Use the <strong>RENAME COLUMN</strong> statement to rename an existing column.</p>
+
+        <pre><code>
+ALTER TABLE table_name
+RENAME COLUMN old_name TO new_name;
+</code></pre>
+
+        <h3>Example</h3>
+
+        <pre><code>
+ALTER TABLE Persons
+RENAME COLUMN LastName TO FamilyName;
+</code></pre>
+
+        <h2>Explanation</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Statement</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>ALTER TABLE</td>
+                    <td>Modifies the structure of an existing table.</td>
+                </tr>
+
+                <tr>
+                    <td>ADD</td>
+                    <td>Adds a new column to the table.</td>
+                </tr>
+
+                <tr>
+                    <td>DROP COLUMN</td>
+                    <td>Removes a column from the table.</td>
+                </tr>
+
+                <tr>
+                    <td>RENAME COLUMN</td>
+                    <td>Changes the name of an existing column.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Note</h2>
+
+        <p>
+            <strong>Note:</strong> The syntax for renaming a column may vary depending on the database system (MySQL,
+            SQL Server, PostgreSQL, Oracle, etc.).
+        </p>
+
+        <br><br>
+        <h1>CREATE INDEX</h1>
+
+        <p>
+            The <strong>CREATE INDEX</strong> statement is used to create an index on one or more columns in a table. An
+            index improves the speed of data retrieval operations.
+        </p>
+
+        <h2>Syntax</h2>
+
+        <pre><code>
+CREATE INDEX index_name
+ON table_name (column1, column2, ...);
+</code></pre>
+
+        <h2>Example</h2>
+
+        <pre><code>
+CREATE INDEX idx_lastname
+ON Persons (LastName);
+</code></pre>
+
+        <h2>Example with Multiple Columns</h2>
+
+        <pre><code>
+CREATE INDEX idx_name
+ON Persons (LastName, FirstName);
+</code></pre>
+
+        <h2>Explanation</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Element</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>CREATE INDEX</td>
+                    <td>Creates a new index.</td>
+                </tr>
+
+                <tr>
+                    <td>index_name</td>
+                    <td>The name of the index.</td>
+                </tr>
+
+                <tr>
+                    <td>ON</td>
+                    <td>Specifies the table where the index will be created.</td>
+                </tr>
+
+                <tr>
+                    <td>table_name</td>
+                    <td>The name of the table.</td>
+                </tr>
+
+                <tr>
+                    <td>(column1, column2, ...)</td>
+                    <td>The column or columns used to create the index.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Advantages</h2>
+
+        <ul>
+            <li>Speeds up <strong>SELECT</strong> queries.</li>
+            <li>Improves search performance on large tables.</li>
+            <li>Can be created on one or multiple columns.</li>
+        </ul>
+
+        <h2>Note</h2>
+
+        <p>
+            <strong>Note:</strong> Creating too many indexes may slow down <strong>INSERT</strong>,
+            <strong>UPDATE</strong>, and <strong>DELETE</strong> operations because the indexes must also be updated.
+        </p>
+
+        <br><br>
+
+        <h1>CREATE VIEW</h1>
+
+        <p>
+            The <strong>CREATE VIEW</strong> statement is used to create a virtual table based on the result of a SQL
+            query.
+        </p>
+
+        <h2>Syntax</h2>
+
+        <pre><code>
+CREATE VIEW view_name AS
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+</code></pre>
+
+        <h2>Example</h2>
+
+        <pre><code>
+CREATE VIEW ActiveEmployees AS
+SELECT Id, Nom, Prenom, Salaire
+FROM Employe
+WHERE Salaire > 3000;
+</code></pre>
+
+        <h2>Using the View</h2>
+
+        <pre><code>
+SELECT * FROM ActiveEmployees;
+</code></pre>
+
+        <h2>Explanation</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Element</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>CREATE VIEW</td>
+                    <td>Creates a virtual table.</td>
+                </tr>
+
+                <tr>
+                    <td>view_name</td>
+                    <td>The name of the view.</td>
+                </tr>
+
+                <tr>
+                    <td>AS</td>
+                    <td>Defines the SQL query used by the view.</td>
+                </tr>
+
+                <tr>
+                    <td>SELECT</td>
+                    <td>Retrieves the data displayed by the view.</td>
+                </tr>
+
+                <tr>
+                    <td>FROM</td>
+                    <td>Specifies the source table.</td>
+                </tr>
+
+                <tr>
+                    <td>WHERE</td>
+                    <td>Filters the records included in the view.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Advantages</h2>
+
+        <ul>
+            <li>Simplifies complex SQL queries.</li>
+            <li>Improves data security by exposing only selected columns.</li>
+            <li>Can be reused like a regular table.</li>
+            <li>Makes SQL code easier to read and maintain.</li>
+        </ul>
+
+        <h2>Note</h2>
+
+        <p>
+            A <strong>VIEW</strong> does not store data itself. It displays data from one or more tables each time it is
+            queried.
+        </p>
+
+        <br><br>
+
+        <h1>SQL SELECT</h1>
+
+        <p>
+            The <strong>SELECT</strong> statement is used to retrieve data from a database.
+        </p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Statement</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>SELECT</td>
+                    <td>Retrieves data from a table.</td>
+                    <td><code>SELECT * FROM Persons;</code></td>
+                </tr>
+
+                <tr>
+                    <td>AS</td>
+                    <td>Renames a column or table temporarily.</td>
+                    <td><code>SELECT LastName AS FamilyName FROM Persons;</code></td>
+                </tr>
+
+                <tr>
+                    <td>FROM</td>
+                    <td>Specifies the table to query.</td>
+                    <td><code>SELECT * FROM Persons;</code></td>
+                </tr>
+
+                <tr>
+                    <td>WHERE</td>
+                    <td>Filters records based on a condition.</td>
+                    <td><code>SELECT * FROM Persons WHERE City='Agadir';</code></td>
+                </tr>
+
+                <tr>
+                    <td>AND / OR / NOT</td>
+                    <td>Combines or negates conditions.</td>
+                    <td><code>WHERE Age > 18 AND City='Agadir'</code></td>
+                </tr>
+
+                <tr>
+                    <td>ORDER BY</td>
+                    <td>Sorts the result.</td>
+                    <td><code>ORDER BY LastName ASC;</code></td>
+                </tr>
+
+                <tr>
+                    <td>ASC</td>
+                    <td>Sorts in ascending order.</td>
+                    <td><code>ORDER BY Age ASC;</code></td>
+                </tr>
+
+                <tr>
+                    <td>DESC</td>
+                    <td>Sorts in descending order.</td>
+                    <td><code>ORDER BY Age DESC;</code></td>
+                </tr>
+
+                <tr>
+                    <td>DISTINCT</td>
+                    <td>Returns unique values only.</td>
+                    <td><code>SELECT DISTINCT City FROM Persons;</code></td>
+                </tr>
+
+                <tr>
+                    <td>IS NULL</td>
+                    <td>Finds NULL values.</td>
+                    <td><code>WHERE Address IS NULL;</code></td>
+                </tr>
+
+                <tr>
+                    <td>IS NOT NULL</td>
+                    <td>Finds non-NULL values.</td>
+                    <td><code>WHERE Address IS NOT NULL;</code></td>
+                </tr>
+
+                <tr>
+                    <td>LIMIT</td>
+                    <td>Limits the number of rows (MySQL).</td>
+                    <td><code>SELECT * FROM Persons LIMIT 5;</code></td>
+                </tr>
+
+                <tr>
+                    <td>TOP</td>
+                    <td>Limits the number of rows (SQL Server).</td>
+                    <td><code>SELECT TOP 5 * FROM Persons;</code></td>
+                </tr>
+
+                <tr>
+                    <td>LIKE</td>
+                    <td>Searches using patterns.</td>
+                    <td><code>WHERE LastName LIKE 'A%';</code></td>
+                </tr>
+
+                <tr>
+                    <td>COUNT()</td>
+                    <td>Counts the number of rows.</td>
+                    <td><code>SELECT COUNT(*) FROM Persons;</code></td>
+                </tr>
+
+                <tr>
+                    <td>GROUP BY</td>
+                    <td>Groups rows with the same values.</td>
+                    <td><code>GROUP BY City;</code></td>
+                </tr>
+
+                <tr>
+                    <td>HAVING</td>
+                    <td>Filters grouped results.</td>
+                    <td><code>HAVING COUNT(*) > 2;</code></td>
+                </tr>
+
+                <tr>
+                    <td>BETWEEN</td>
+                    <td>Selects values within a range.</td>
+                    <td><code>WHERE Age BETWEEN 18 AND 30;</code></td>
+                </tr>
+
+                <tr>
+                    <td>IN</td>
+                    <td>Matches any value in a list.</td>
+                    <td><code>WHERE City IN ('Agadir','Rabat');</code></td>
+                </tr>
+
+                <tr>
+                    <td>MAX()</td>
+                    <td>Returns the maximum value.</td>
+                    <td><code>SELECT MAX(Salary) FROM Employe;</code></td>
+                </tr>
+
+                <tr>
+                    <td>MIN()</td>
+                    <td>Returns the minimum value.</td>
+                    <td><code>SELECT MIN(Salary) FROM Employe;</code></td>
+                </tr>
+
+                <tr>
+                    <td>AVG()</td>
+                    <td>Returns the average value.</td>
+                    <td><code>SELECT AVG(Salary) FROM Employe;</code></td>
+                </tr>
+
+                <tr>
+                    <td>SUM()</td>
+                    <td>Returns the total sum.</td>
+                    <td><code>SELECT SUM(Salary) FROM Employe;</code></td>
+                </tr>
+
+                <tr>
+                    <td>INNER JOIN</td>
+                    <td>Returns matching records from both tables.</td>
+                    <td><code>SELECT * FROM Orders INNER JOIN Persons ON Orders.PersonID = Persons.PersonID;</code></td>
+                </tr>
+
+                <tr>
+                    <td>LEFT JOIN</td>
+                    <td>Returns all rows from the left table and matching rows from the right table.</td>
+                    <td><code>SELECT * FROM Persons LEFT JOIN Orders ON Persons.PersonID = Orders.PersonID;</code></td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </section>
+
+
+</body>
+
+</html>
