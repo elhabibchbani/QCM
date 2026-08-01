@@ -135,7 +135,7 @@ nav ul li a.active {
 }
 
 .sql-card {
-    background-image: url("../IMAGE/SQL.png");
+    background-image: url("./IMAGE/SQL.png");
 }
 
 .card::before {
