@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QCM Dev Informatique</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <link rel="stylesheet" href="./SQL.css">
+    <link rel="stylesheet" href="./QCMSQL.css">
+    <script src="./QCMSQL.js"></script>
 </head>
-
 <body>
 
     <div>
@@ -20,7 +18,7 @@
                 <i class="fas fa-bars"></i>
             </label>
 
-            <label class="logo"><a href="../index.html" class="logo-link">DevQuize</a></label>
+            <label class="logo"><a href="../../index.html" class="logo-link" >DevQuize</a></label>
 
             <ul>
                 <li><a class="active" href="#">Home</a></li>
@@ -32,35 +30,16 @@
         </nav>
     </div>
 
-
-    <div class="grid">
-
-        <!-- Card avec SQL -->
-        <a href="./CoursSQL/CoursSQL.html" class="card-link">
-            <div class="card sql-card">
-                <div class="card-content">
-                    <h3>SQL</h3>
-                    <p>Cours SQL</p>
-                </div>
-            </div>
-        </a>
-
-        <!-- Card avec SQL -->
-        <a href="./QCMSQL/QCMSQL.html" class="card-link">
-            <div class="card sql-card">
-                <div class="card-content">
-                    <h3>SQL</h3>
-                    <p>QCM SQL</p>
-                </div>
-            </div>
-        </a>
-
-
-
-
+    <div class="container">
+        <h1>Quiz HPH</h1>
+        <br><br>
+        <div id="quiz">
+        <div class="question" id="question"></div>
+        <div class="answers" id="answers"></div>
+        <button onclick="nextQuestion()">Suivant</button>
+        </div>
+        <div class="result" id="result"></div>
     </div>
 
-
 </body>
-
 </html>
