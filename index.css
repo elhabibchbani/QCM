@@ -138,6 +138,10 @@ nav ul li a.active {
     background-image: url("./IMAGE/SQL.png");
 }
 
+.DGCL-card {
+    background-image: url("../IMAGE/DGCL.jpg");
+}
+
 .card::before {
     content: "";
     position: absolute;
