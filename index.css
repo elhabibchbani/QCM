@@ -139,7 +139,7 @@ nav ul li a.active {
 }
 
 .DGCL-card {
-    background-image: url("../IMAGE/DGCL.jpg");
+    background-image: url("./IMAGE/DGCL.jpg");
 }
 
 .card::before {
