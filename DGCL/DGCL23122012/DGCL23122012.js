@@ -41,12 +41,12 @@ const questions = [
   },
   {
     question:
-      "6. Quel est l'incident engendré par un trafic de diffusion (BROADCAST) excessif sur un segment de réseau ?",
+      "6. Quel est le rôle principal d'une boucle FOR dans un algorithme ?",
     answers: [
-      "A. Il requiert des schémas d'adressage complexes",
-      "B. Il interrompt les fonctions des autres hôtes",
-      "C. Il divise les réseaux en fonction des permissions d'accès aux ressources réseau",
-      "D. Il nécessite du matériel évolué",
+      "A. Déclarer une variable",
+      "B. Répéter un bloc d'instructions un nombre déterminé de fois",
+      "C. Tester une condition sans répétition",
+      "D. Afficher un résultat",
     ],
     correct: 1,
   },
@@ -68,34 +68,24 @@ const questions = [
   },
   {
     question:
-      "9. Quelle est la raison principale à l'origine du développement du protocole IPv6 ?",
-    answers: [
-      "A. La sécurité",
-      "B. La simplification du format des en-têtes",
-      "C. L'extension des possibilités d'adressage",
-      "D. La simplification de l'adressage",
-    ],
+      "9. Quelle est la valeur finale de la variable S après l'exécution de l'algorithme suivant ? S ← 0 ; Pour i ← 1 à 4 Faire ; S ← S + i ; FinPour",
+    answers: ["A. 4", "B. 6", "C. 10", "D. 15"],
     correct: 2,
   },
   {
     question:
-      "10. À travers quel procédé le câblage à paires torsadées non blindées permet-il d'éviter les interférences ?",
-    answers: [
-      "A. Grâce au renforcement de la protection du câblage",
-      "B. Grâce à la torsion des paires de fils",
-      "C. Grâce à la mise à la terre des extrémités",
-      "D. Grâce à l'enveloppe du câblage",
-    ],
-    correct: 1,
+      "10. Quelle clause SQL permet de filtrer les résultats d'une requête selon une condition ?",
+    answers: ["A. ORDER BY", "B. GROUP BY", "C. WHERE", "D. SELECT"],
+    correct: 2,
   },
   {
     question:
-      "11. Quel est l'avantage du câble en fibre optique par rapport au câble en cuivre ?",
+      "11. En programmation orientée objet, quel est le rôle du constructeur d'une classe ?",
     answers: [
-      "A. Le câblage en cuivre revient plus cher",
-      "B. La fibre optique empêche les interférences électromagnétiques",
-      "C. La manipulation du câble optique doit se faire avec plus de soin",
-      "D. Le transfert du courant électrique est plus efficace",
+      "A. Détruire automatiquement tous les objets",
+      "B. Initialiser les attributs d'un objet lors de sa création",
+      "C. Supprimer les méthodes de la classe",
+      "D. Déclarer une base de données",
     ],
     correct: 1,
   },
@@ -133,14 +123,14 @@ const questions = [
   },
   {
     question:
-      "15. Parmi ces caractéristiques, quelle est celle qui s'applique à une route statique ?",
+      "15. Quelle est la différence entre une boucle WHILE et une boucle DO...WHILE ?",
     answers: [
-      "A. Elle permet de s'assurer qu'un chemin d'accès est toujours disponible",
-      "B. Elle est utilisée pour les réseaux avec plusieurs routes vers un réseau de destination",
-      "C. Elle est utilisée pour les routeurs qui se connectent à des réseaux d'extrémité",
-      "D. Elle réduit le temps de configuration",
+      "A. WHILE exécute toujours les instructions au moins une fois",
+      "B. DO...WHILE teste la condition après l'exécution du bloc d'instructions",
+      "C. Les deux boucles sont utilisées uniquement pour déclarer des variables",
+      "D. WHILE ne permet pas d'utiliser des conditions",
     ],
-    correct: 2,
+    correct: 1,
   },
   {
     question: "16. Combien d'hôtes supporte le sous-réseau 172.16.16.64/30 ?",
@@ -153,17 +143,16 @@ const questions = [
     answers: ["A. 8", "B. 12", "C. 16", "D. 32"],
     correct: 3,
   },
-  {
-    question:
-      "18. Quelle serait la capacité d'un port unique sur un commutateur Gigabit Ethernet 48 ports ?",
-    answers: [
-      "A. 48 Gbits/s",
-      "B. 10 Mbits/s",
-      "C. 1000 Mbits/s",
-      "D. 100 Mbits/s",
-    ],
-    correct: 2,
-  },
+{
+  question: "18. Quelle instruction SQL permet de récupérer des données depuis une table ?",
+  answers: [
+    "A. INSERT",
+    "B. UPDATE",
+    "C. SELECT",
+    "D. DELETE",
+  ],
+  correct: 2,
+},
   {
     question:
       "19. Sur quelle couche du modèle OSI est exécuté un commutateur qui utilise des adresses MAC pour acheminer les trames ?",
@@ -256,13 +245,9 @@ const questions = [
     correct: 1,
   },
   {
-    question: "31. À quoi sert l'utilitaire TRACERT dans MS-WINDOWS ?",
-    answers: [
-      "A. À déterminer l'adresse IP source d'un paquet IP",
-      "B. À déterminer le nombre de routeurs par lesquels passe un paquet IP",
-      "C. À déterminer l'itinéraire emprunté par un paquet IP",
-      "D. À afficher la table de routage du poste de travail",
-    ],
+    question:
+      "31. Quelle commande SQL permet de supprimer complètement une table d'une base de données ?",
+    answers: ["A. DELETE", "B. UPDATE", "C. DROP TABLE", "D. REMOVE"],
     correct: 2,
   },
   {
@@ -359,78 +344,76 @@ const questions = [
     ],
     correct: 1,
   },
-  {
-    question: "41. L'UMTS est une technologie mobile de :",
-    answers: [
-      "A. 1ère génération",
-      "B. 2ème génération",
-      "C. 3ème génération",
-      "D. Aucune de ces réponses",
-    ],
-    correct: 2,
-  },
-  {
-    question: "42. Le Handover permet de :",
-    answers: [
-      "A. Garder une communication téléphonique entre 2 cellules",
-      "B. Téléphoner à l'étranger",
-      "C. Augmenter le débit",
-      "D. Aucune de ces réponses",
-    ],
-    correct: 0,
-  },
-  {
-    question:
-      "43. Pour une communication entre un poste radio et un relais, il est nécessaire d'utiliser :",
-    answers: [
-      "A. 1 fréquence",
-      "B. 2 fréquences",
-      "C. 3 fréquences",
-      "D. Aucune de ces réponses",
-    ],
-    correct: 1,
-  },
-  {
-    question: "44. Un pylône de télécommunications est :",
-    answers: [
-      "A. Une antenne omnidirectionnelle",
-      "B. Un support utilisé pour supporter des antennes de télécommunications",
-      "C. Un mât d'antenne",
-      "D. Aucune de ces réponses",
-    ],
-    correct: 1,
-  },
-  {
-    question: "45. Le gain d'une antenne est mesuré en :",
-    answers: [
-      "A. Décibels",
-      "B. Watts",
-      "C. Volts",
-      "D. Aucune de ces réponses",
-    ],
-    correct: 0,
-  },
-  {
-    question:
-      "46. Une antenne parabolique, de 1 m de diamètre, est utilisée sur une fréquence de 5 GHz. Comment se comporte-t-elle sur 10 GHz ?",
-    answers: [
-      "A. Le gain devient plus grand mais l'angle d'ouverture devient plus faible",
-      "B. Le gain et l'angle d'ouverture deviennent plus faibles",
-      "C. Le gain et l'angle d'ouverture augmentent",
-      "D. Aucune de ces réponses",
-    ],
-    correct: 0,
-  },
-  {
-    question: "47. Le réseau téléphonique commuté RTC est basé sur :",
-    answers: [
-      "A. La commutation de circuit",
-      "B. La commutation de paquets",
-      "C. La commutation de cellules",
-      "D. Aucune de ces réponses",
-    ],
-    correct: 0,
-  },
+{
+  question: "41. Quel est le résultat de l'expression 10 % 3 en programmation ?",
+  answers: [
+    "A. 3",
+    "B. 1",
+    "C. 0",
+    "D. 10",
+  ],
+  correct: 1,
+},
+{
+  question: "42. Quel opérateur permet de comparer deux valeurs pour vérifier si elles sont égales en JavaScript ?",
+  answers: [
+    "A. =",
+    "B. ==",
+    "C. !=",
+    "D. +=",
+  ],
+  correct: 1,
+},
+{
+  question: "43. Quelle commande SQL permet d'ajouter un nouvel enregistrement dans une table ?",
+  answers: [
+    "A. SELECT",
+    "B. INSERT INTO",
+    "C. UPDATE",
+    "D. DROP TABLE",
+  ],
+  correct: 1,
+},
+{
+  question: "44. Quelle structure de données fonctionne selon le principe LIFO (Last In, First Out) ?",
+  answers: [
+    "A. Une file (Queue)",
+    "B. Une pile (Stack)",
+    "C. Un tableau (Array)",
+    "D. Une liste chaînée (Linked List)",
+  ],
+  correct: 1,
+},
+{
+  question: "45. Quel est le rôle d'une clé étrangère (FOREIGN KEY) dans une base de données ?",
+  answers: [
+    "A. Identifier chaque enregistrement de manière unique",
+    "B. Établir une relation entre deux tables",
+    "C. Supprimer automatiquement une table",
+    "D. Trier les enregistrements",
+  ],
+  correct: 1,
+},
+{
+  question: "46. Quel est le résultat de l'exécution du code suivant en JavaScript ?",
+  answers: [
+    "A. 10",
+    "B. 15",
+    "C. 20",
+    "D. 25",
+  ],
+  correct: 1,
+},
+{
+  question: "47. Quel mot-clé permet de déclarer une constante en JavaScript ?",
+  answers: [
+    "A. var",
+    "B. let",
+    "C. const",
+    "D. static",
+  ],
+  correct: 2,
+},
   {
     question:
       "48. Combien y a-t-il de liens entre 5 équipements dans un réseau de topologie maillée ?",
@@ -443,29 +426,36 @@ const questions = [
     answers: ["A. WiMAX", "B. GSM-R", "C. GSM", "D. Aucune de ces réponses"],
     correct: 2,
   },
-  {
-    question:
-      "50. Qu'appelle-t-on les antennes-relais du réseau GSM qui communiquent directement avec les mobiles ?",
-    answers: ["A. BSC", "B. BTS", "C. MSC", "D. Aucune de ces réponses"],
-    correct: 1,
-  },
-  {
-    question:
-      "51. Quand on parle d'une tension de secteur de 240 V, est-ce de 240 Vmoy (tension moyenne), 240 Veff (tension efficace), 240 Vmax (tension maximale) ou 240 Vpp (tension de crête ou peak-to-peak) ?",
-    answers: ["A. 240 Veff", "B. 240 Vmax", "C. 240 Vmoy", "D. 240 Vpp"],
-    correct: 0,
-  },
-  {
-    question:
-      "52. L'amplitude d'une onde sinusoïdale alternative est égale à :",
-    answers: [
-      "A. La valeur efficace",
-      "B. La valeur maximale",
-      "C. 0,636 fois la valeur moyenne",
-      "D. Aucune de ces réponses",
-    ],
-    correct: 1,
-  },
+{
+  question: "50. Quel opérateur permet de vérifier si une valeur est différente d'une autre en JavaScript ?",
+  answers: [
+    "A. ==",
+    "B. =",
+    "C. !=",
+    "D. >=",
+  ],
+  correct: 2,
+},
+{
+  question: "51. Quelle méthode JavaScript permet de convertir une chaîne de caractères en nombre entier ?",
+  answers: [
+    "A. parseInt()",
+    "B. toString()",
+    "C. push()",
+    "D. join()",
+  ],
+  correct: 0,
+},
+{
+  question: "52. Quelle méthode JavaScript permet d'ajouter un élément à la fin d'un tableau ?",
+  answers: [
+    "A. pop()",
+    "B. shift()",
+    "C. push()",
+    "D. unshift()",
+  ],
+  correct: 2,
+},
   {
     question:
       "53. À hautes fréquences, une capacitance se comporte théoriquement comme :",
@@ -501,14 +491,14 @@ const questions = [
   },
   {
     question:
-      "56. Une batterie de 12 V est chargée pendant 10 h par un courant de 2 ampères. Quelle sera sa capacité en fin de charge ?",
+      "56. Quelle structure de données permet de stocker plusieurs valeurs du même type dans une seule variable ?",
     answers: [
-      "A. 20 A",
-      "B. 240 Wh",
-      "C. 72000 C",
-      "D. Aucune de ces réponses",
+      "A. Une fonction",
+      "B. Un tableau",
+      "C. Une condition",
+      "D. Une boucle",
     ],
-    correct: 2,
+    correct: 1,
   },
   {
     question: "57. Une batterie fournit un courant électrique :",
@@ -604,16 +594,16 @@ const questions = [
     ],
     correct: 1,
   },
-  {
-    question: "66. La défragmentation d'un disque permet :",
-    answers: [
-      "A. De récupérer de l'espace en supprimant les fichiers inutiles",
-      "B. De supprimer une ou plusieurs partitions d'un disque",
-      "C. De gagner en vitesse en optimisant l'emplacement des fichiers sur le disque",
-      "D. Aucune de ces réponses",
-    ],
-    correct: 2,
-  },
+{
+  question: "66. Quelle commande SQL permet de modifier les données existantes dans une table ?",
+  answers: [
+    "A. SELECT",
+    "B. INSERT INTO",
+    "C. UPDATE",
+    "D. CREATE TABLE",
+  ],
+  correct: 2,
+},
   {
     question: "67. Qu'est-ce que le NTFS ?",
     answers: [
@@ -684,12 +674,13 @@ const questions = [
     correct: 0,
   },
   {
-    question: "74. La confidentialité, c'est :",
+    question:
+      "74. Quel est le rôle d'une clé primaire (PRIMARY KEY) dans une base de données ?",
     answers: [
-      "A. Les informations sont protégées des risques de destruction et d'altération",
-      "B. Les informations sont accessibles uniquement par les personnes autorisées",
-      "C. Les informations sont accessibles 24/7 ou à chaque fois que c'est nécessaire",
-      "D. Aucune de ces réponses",
+      "A. Relier deux tables uniquement",
+      "B. Identifier chaque enregistrement de manière unique",
+      "C. Trier les données par ordre alphabétique",
+      "D. Supprimer les doublons automatiquement",
     ],
     correct: 1,
   },
@@ -746,13 +737,9 @@ const questions = [
     correct: 1,
   },
   {
-    question: "81. Seule une machine Windows peut être infectée par un virus ?",
-    answers: [
-      "A. Vrai",
-      "B. Faux",
-      "C. Aucune de ces réponses",
-      "D. Aucune de ces réponses",
-    ],
+    question:
+      "81. Quelle instruction permet de répéter un bloc de code tant qu'une condition est vraie ?",
+    answers: ["A. IF", "B. WHILE", "C. SWITCH", "D. RETURN"],
     correct: 1,
   },
   {
