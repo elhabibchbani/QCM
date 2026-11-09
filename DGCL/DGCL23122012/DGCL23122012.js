@@ -788,7 +788,7 @@ const questions = [
   {
     question:
       "93. Quelle sera la valeur affichée à la fin de l'exécution de l'algorithme suivant ?\n\nDébut\n  x ← 5\n  y ← 4\n  x ← x + y\n  y ← x - y\n  Afficher(y)\nFin",
-    answers: ["A. 4", "B. 9", "C. 1", "D. Aucune de ces réponses"],
+    answers: ["A. 4", "B. 5", "C. 1", "D. Aucune de ces réponses"],
     correct: 1,
   },
   {
