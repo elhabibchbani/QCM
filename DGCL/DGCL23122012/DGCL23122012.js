@@ -143,16 +143,12 @@ const questions = [
     answers: ["A. 8", "B. 12", "C. 16", "D. 32"],
     correct: 3,
   },
-{
-  question: "18. Quelle instruction SQL permet de récupérer des données depuis une table ?",
-  answers: [
-    "A. INSERT",
-    "B. UPDATE",
-    "C. SELECT",
-    "D. DELETE",
-  ],
-  correct: 2,
-},
+  {
+    question:
+      "18. Quelle instruction SQL permet de récupérer des données depuis une table ?",
+    answers: ["A. INSERT", "B. UPDATE", "C. SELECT", "D. DELETE"],
+    correct: 2,
+  },
   {
     question:
       "19. Sur quelle couche du modèle OSI est exécuté un commutateur qui utilise des adresses MAC pour acheminer les trames ?",
@@ -344,76 +340,58 @@ const questions = [
     ],
     correct: 1,
   },
-{
-  question: "41. Quel est le résultat de l'expression 10 % 3 en programmation ?",
-  answers: [
-    "A. 3",
-    "B. 1",
-    "C. 0",
-    "D. 10",
-  ],
-  correct: 1,
-},
-{
-  question: "42. Quel opérateur permet de comparer deux valeurs pour vérifier si elles sont égales en JavaScript ?",
-  answers: [
-    "A. =",
-    "B. ==",
-    "C. !=",
-    "D. +=",
-  ],
-  correct: 1,
-},
-{
-  question: "43. Quelle commande SQL permet d'ajouter un nouvel enregistrement dans une table ?",
-  answers: [
-    "A. SELECT",
-    "B. INSERT INTO",
-    "C. UPDATE",
-    "D. DROP TABLE",
-  ],
-  correct: 1,
-},
-{
-  question: "44. Quelle structure de données fonctionne selon le principe LIFO (Last In, First Out) ?",
-  answers: [
-    "A. Une file (Queue)",
-    "B. Une pile (Stack)",
-    "C. Un tableau (Array)",
-    "D. Une liste chaînée (Linked List)",
-  ],
-  correct: 1,
-},
-{
-  question: "45. Quel est le rôle d'une clé étrangère (FOREIGN KEY) dans une base de données ?",
-  answers: [
-    "A. Identifier chaque enregistrement de manière unique",
-    "B. Établir une relation entre deux tables",
-    "C. Supprimer automatiquement une table",
-    "D. Trier les enregistrements",
-  ],
-  correct: 1,
-},
-{
-  question: "46. Quel est le résultat de l'exécution du code suivant en JavaScript ?",
-  answers: [
-    "A. 10",
-    "B. 15",
-    "C. 20",
-    "D. 25",
-  ],
-  correct: 1,
-},
-{
-  question: "47. Quel mot-clé permet de déclarer une constante en JavaScript ?",
-  answers: [
-    "A. var",
-    "B. let",
-    "C. const",
-    "D. static",
-  ],
-  correct: 2,
-},
+  {
+    question:
+      "41. Quel est le résultat de l'expression 10 % 3 en programmation ?",
+    answers: ["A. 3", "B. 1", "C. 0", "D. 10"],
+    correct: 1,
+  },
+  {
+    question:
+      "42. Quel opérateur permet de comparer deux valeurs pour vérifier si elles sont égales en JavaScript ?",
+    answers: ["A. =", "B. ==", "C. !=", "D. +="],
+    correct: 1,
+  },
+  {
+    question:
+      "43. Quelle commande SQL permet d'ajouter un nouvel enregistrement dans une table ?",
+    answers: ["A. SELECT", "B. INSERT INTO", "C. UPDATE", "D. DROP TABLE"],
+    correct: 1,
+  },
+  {
+    question:
+      "44. Quelle structure de données fonctionne selon le principe LIFO (Last In, First Out) ?",
+    answers: [
+      "A. Une file (Queue)",
+      "B. Une pile (Stack)",
+      "C. Un tableau (Array)",
+      "D. Une liste chaînée (Linked List)",
+    ],
+    correct: 1,
+  },
+  {
+    question:
+      "45. Quel est le rôle d'une clé étrangère (FOREIGN KEY) dans une base de données ?",
+    answers: [
+      "A. Identifier chaque enregistrement de manière unique",
+      "B. Établir une relation entre deux tables",
+      "C. Supprimer automatiquement une table",
+      "D. Trier les enregistrements",
+    ],
+    correct: 1,
+  },
+  {
+    question:
+      "46. Quel est le résultat de l'exécution du code suivant en JavaScript ?\n\nlet x = 10;\nlet y = 5;\nconsole.log(x + y);",
+    answers: ["A. 10", "B. 15", "C. 20", "D. 25"],
+    correct: 1,
+  },
+  {
+    question:
+      "47. Quel mot-clé permet de déclarer une constante en JavaScript ?",
+    answers: ["A. var", "B. let", "C. const", "D. static"],
+    correct: 2,
+  },
   {
     question:
       "48. Combien y a-t-il de liens entre 5 équipements dans un réseau de topologie maillée ?",
@@ -426,68 +404,46 @@ const questions = [
     answers: ["A. WiMAX", "B. GSM-R", "C. GSM", "D. Aucune de ces réponses"],
     correct: 2,
   },
-{
-  question: "50. Quel opérateur permet de vérifier si une valeur est différente d'une autre en JavaScript ?",
-  answers: [
-    "A. ==",
-    "B. =",
-    "C. !=",
-    "D. >=",
-  ],
-  correct: 2,
-},
-{
-  question: "51. Quelle méthode JavaScript permet de convertir une chaîne de caractères en nombre entier ?",
-  answers: [
-    "A. parseInt()",
-    "B. toString()",
-    "C. push()",
-    "D. join()",
-  ],
-  correct: 0,
-},
-{
-  question: "52. Quelle méthode JavaScript permet d'ajouter un élément à la fin d'un tableau ?",
-  answers: [
-    "A. pop()",
-    "B. shift()",
-    "C. push()",
-    "D. unshift()",
-  ],
-  correct: 2,
-},
   {
     question:
-      "53. À hautes fréquences, une capacitance se comporte théoriquement comme :",
-    answers: [
-      "A. Un court-circuit",
-      "B. Un interrupteur",
-      "C. Un amplificateur",
-      "D. Aucune de ces réponses",
-    ],
+      "50. Quel opérateur permet de vérifier si une valeur est différente d'une autre en JavaScript ?",
+    answers: ["A. ==", "B. =", "C. !=", "D. >="],
+    correct: 2,
+  },
+  {
+    question:
+      "51. Quelle méthode JavaScript permet de convertir une chaîne de caractères en nombre entier ?",
+    answers: ["A. parseInt()", "B. toString()", "C. push()", "D. join()"],
     correct: 0,
   },
   {
     question:
-      "54. À hautes fréquences, une inductance se comporte théoriquement comme :",
+      "52. Quelle méthode JavaScript permet d'ajouter un élément à la fin d'un tableau ?",
+    answers: ["A. pop()", "B. shift()", "C. push()", "D. unshift()"],
+    correct: 2,
+  },
+  {
+    question:
+      "53. Quel est le rôle principal d'un algorithme en programmation ?",
     answers: [
-      "A. Un court-circuit",
-      "B. Un interrupteur",
-      "C. Un amplificateur",
-      "D. Aucune de ces réponses",
+      "A. Stocker les données dans une base de données",
+      "B. Résoudre un problème à travers une suite d'instructions",
+      "C. Créer uniquement des pages web",
+      "D. Augmenter la vitesse du processeur",
     ],
     correct: 1,
   },
   {
     question:
-      "55. Pour transformer une tension alternative en tension continue, on doit utiliser :",
-    answers: [
-      "A. Un transistor",
-      "B. Un pont de diodes",
-      "C. Des résistances",
-      "D. Aucune de ces réponses",
-    ],
-    correct: 1,
+      "54. Quelle instruction permet de prendre une décision en fonction d'une condition en JavaScript ?",
+    answers: ["A. for", "B. while", "C. if...else", "D. function"],
+    correct: 2,
+  },
+  {
+    question:
+      "55. Quel langage est principalement utilisé pour structurer le contenu d'une page web ?",
+    answers: ["A. CSS", "B. JavaScript", "C. HTML", "D. SQL"],
+    correct: 2,
   },
   {
     question:
@@ -501,56 +457,39 @@ const questions = [
     correct: 1,
   },
   {
-    question: "57. Une batterie fournit un courant électrique :",
-    answers: [
-      "A. Alternatif",
-      "B. Synchrone",
-      "C. Continu",
-      "D. Aucune de ces réponses",
-    ],
+    question:
+      "57. Quelle commande SQL permet de récupérer des données à partir d'une table ?",
+    answers: ["A. INSERT", "B. UPDATE", "C. SELECT", "D. DELETE"],
     correct: 2,
   },
   {
-    question: "58. Le wattmètre est un appareil qui mesure :",
-    answers: [
-      "A. L'intensité du courant",
-      "B. La tension",
-      "C. La puissance",
-      "D. Aucune de ces réponses",
-    ],
+    question:
+      "58. Quelle méthode JavaScript permet de convertir une chaîne de caractères en nombre entier ?",
+    answers: ["A. parseInt()", "B. toString()", "C. isNaN()", "D. length()"],
+    correct: 0,
+  },
+  {
+    question:
+      "59. Quelle instruction SQL permet de modifier les données existantes dans une table ?",
+    answers: ["A. INSERT", "B. SELECT", "C. UPDATE", "D. CREATE"],
     correct: 2,
   },
   {
-    question: "59. Qu'est-ce que le chipset de la carte mère ?",
+    question:
+      "60. Quel est le rôle principal du langage CSS dans le développement web ?",
     answers: [
-      "A. Le support accueillant le processeur",
-      "B. Le support accueillant la barrette de mémoire (RAM)",
-      "C. Un jeu de composants permettant les échanges entre les divers éléments d'un ordinateur",
-      "D. Aucune de ces réponses",
+      "A. Gérer les bases de données",
+      "B. Structurer le contenu d'une page web",
+      "C. Mettre en forme et styliser les pages web",
+      "D. Exécuter les requêtes SQL",
     ],
     correct: 2,
   },
   {
     question:
-      "60. Comment se nomme l'unité minimale allouée par un disque dur lors d'une opération d'écriture ?",
-    answers: [
-      "A. Le secteur",
-      "B. Le cluster",
-      "C. Le bloc",
-      "D. Aucune de ces réponses",
-    ],
+      "61. Quel protocole est utilisé pour transférer des pages web sur Internet ?",
+    answers: ["A. FTP", "B. HTTP", "C. SMTP", "D. DNS"],
     correct: 1,
-  },
-  {
-    question:
-      "61. Parmi les périphériques suivants, lesquels sont les périphériques d'entrée (mais pas d'entrée-sortie) ?",
-    answers: [
-      "A. Un écran",
-      "B. Un lecteur de CD-ROM",
-      "C. Un scanner",
-      "D. Une clé USB",
-    ],
-    correct: 2,
   },
   {
     question:
@@ -564,12 +503,13 @@ const questions = [
     correct: 2,
   },
   {
-    question: "63. À quoi correspondent 3 GHz d'un microprocesseur ?",
+    question:
+      "63. Quel est le rôle principal du système d'exploitation dans un ordinateur ?",
     answers: [
-      "A. Le nombre de transistors",
-      "B. La fréquence d'horloge",
-      "C. La finesse de gravure",
-      "D. Aucune de ces réponses",
+      "A. Créer des pages web",
+      "B. Gérer les ressources matérielles et logicielles",
+      "C. Programmer des applications",
+      "D. Stocker uniquement les fichiers",
     ],
     correct: 1,
   },
@@ -594,16 +534,12 @@ const questions = [
     ],
     correct: 1,
   },
-{
-  question: "66. Quelle commande SQL permet de modifier les données existantes dans une table ?",
-  answers: [
-    "A. SELECT",
-    "B. INSERT INTO",
-    "C. UPDATE",
-    "D. CREATE TABLE",
-  ],
-  correct: 2,
-},
+  {
+    question:
+      "66. Quelle commande SQL permet de modifier les données existantes dans une table ?",
+    answers: ["A. SELECT", "B. INSERT INTO", "C. UPDATE", "D. CREATE TABLE"],
+    correct: 2,
+  },
   {
     question: "67. Qu'est-ce que le NTFS ?",
     answers: [
@@ -851,7 +787,7 @@ const questions = [
   },
   {
     question:
-      "93. Quelle sera la valeur affichée à la fin de l'exécution de l'algorithme suivant ?",
+      "93. Quelle sera la valeur affichée à la fin de l'exécution de l'algorithme suivant ?\n\nDébut\n  x ← 5\n  y ← 4\n  x ← x + y\n  y ← x - y\n  Afficher(y)\nFin",
     answers: ["A. 4", "B. 9", "C. 1", "D. Aucune de ces réponses"],
     correct: 1,
   },
@@ -873,9 +809,10 @@ const questions = [
     correct: 0,
   },
   {
-    question: "96. Combien de fois le message « Salut » sera-t-il affiché ?",
+    question:
+      '96. Combien de fois le message « Salut » sera-t-il affiché lors de l\'exécution du programme suivant ?\n\nint i;\nfor (i = 0; i < 15; i++) {\n    printf("Salut\\n");\n}',
     answers: ["A. 0 fois", "B. 1 fois", "C. 2 fois", "D. 15 fois"],
-    correct: 1,
+    correct: 3,
   },
   {
     question:
