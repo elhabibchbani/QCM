@@ -68,7 +68,7 @@ const questions = [
   },
   {
     question:
-      "9. Quelle est la valeur finale de la variable S après l'exécution de l'algorithme suivant ? S ← 0 ; Pour i ← 1 à 4 Faire ; S ← S + i ; FinPour",
+      "9. Quelle est la valeur finale de la variable S après l'exécution de l'algorithme suivant ?\n\nS ← 0\nPour i ← 1 à 4 Faire\n    S ← S + i\nFinPour",
     answers: ["A. 4", "B. 6", "C. 10", "D. 15"],
     correct: 2,
   },
