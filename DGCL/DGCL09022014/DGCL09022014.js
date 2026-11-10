@@ -229,11 +229,11 @@ const questions = [
     answers: ["A. Routeur", "B. Clavier", "C. Écran", "D. Scanner"],
     correct: 0,
   },
-  {
-    question: "36. Quelle topologie réseau utilise un équipement central ?",
-    answers: ["A. Anneau", "B. Bus", "C. Étoile", "D. Maillée"],
-    correct: 2,
-  },
+{
+  question: "36. Quel appareil permet de relier plusieurs réseaux informatiques entre eux ?",
+  answers: ["A. Switch", "B. Routeur", "C. Répéteur", "D. Hub"],
+  correct: 1,
+},
   {
     question:
       "37. Quel protocole est utilisé pour la réception des e-mails et leur synchronisation sur plusieurs appareils ?",
@@ -266,17 +266,16 @@ const questions = [
     ],
     correct: 0,
   },
-  {
-    question:
-      "41. Quel principe de sécurité consiste à donner uniquement les droits nécessaires ?",
-    answers: [
-      "A. Moindre privilège",
-      "B. Accès illimité",
-      "C. Partage public",
-      "D. Anonymat total",
-    ],
-    correct: 0,
-  },
+{
+  question: "41. Quel concept de la POO permet de créer une nouvelle classe à partir d'une classe existante ?",
+  answers: [
+    "A. Encapsulation",
+    "B. Héritage",
+    "C. Polymorphisme",
+    "D. Abstraction"
+  ],
+  correct: 1,
+},
   {
     question:
       "42. Quelle technique protège les données en les rendant illisibles sans clé ?",
@@ -318,12 +317,16 @@ const questions = [
     ],
     correct: 1,
   },
-  {
-    question:
-      "46. Quel type de logiciel malveillant chiffre les fichiers et demande une rançon ?",
-    answers: ["A. Ransomware", "B. Spyware", "C. Adware", "D. Worm"],
-    correct: 0,
-  },
+{
+  question: "46. Quel opérateur logique retourne vrai si au moins une condition est vraie ?",
+  answers: [
+    "A. AND",
+    "B. NOT",
+    "C. OR",
+    "D. XOR"
+  ],
+  correct: 2,
+},
   {
     question:
       "47. Quel protocole sécurise les connexions à distance en ligne de commande ?",
@@ -366,38 +369,36 @@ const questions = [
     ],
     correct: 0,
   },
-  {
-    question: "52. Quel risque est associé au phishing ?",
-    answers: [
-      "A. Vol d'identifiants par tromperie",
-      "B. Panne électrique",
-      "C. Surchauffe du CPU",
-      "D. Perte de résolution d'écran",
-    ],
-    correct: 0,
-  },
-  {
-    question:
-      "53. Quelle action est recommandée après la découverte d'une faille de sécurité ?",
-    answers: [
-      "A. L'ignorer",
-      "B. Appliquer le correctif approprié",
-      "C. Désactiver toutes les sauvegardes",
-      "D. Publier les mots de passe",
-    ],
-    correct: 1,
-  },
-  {
-    question:
-      "54. Quel principe garantit que seules les personnes autorisées accèdent aux données ?",
-    answers: [
-      "A. Confidentialité",
-      "B. Disponibilité",
-      "C. Redondance",
-      "D. Portabilité",
-    ],
-    correct: 0,
-  },
+{
+  question: "52. Quel outil permet de protéger un réseau contre les accès non autorisés ?",
+  answers: [
+    "A. Compilateur",
+    "B. Pare-feu (Firewall)",
+    "C. Éditeur de texte",
+    "D. Défragmenteur"
+  ],
+  correct: 1,
+},
+{
+  question: "53. Quelle commande JavaScript permet de sélectionner un élément HTML à partir de son identifiant ?",
+  answers: [
+    "A. document.querySelectorAll()",
+    "B. document.getElementById()",
+    "C. document.createElement()",
+    "D. document.write()"
+  ],
+  correct: 1,
+},
+{
+  question: "54. Quelle fonction PHP permet d'afficher du texte à l'écran ?",
+  answers: [
+    "A. echo",
+    "B. input",
+    "C. print_r",
+    "D. scanf"
+  ],
+  correct: 0,
+},
   {
     question: "55. Quel est le rôle d'un certificat numérique TLS ?",
     answers: [
@@ -408,38 +409,36 @@ const questions = [
     ],
     correct: 0,
   },
-  {
-    question:
-      "56. Quel type de sauvegarde copie uniquement les fichiers modifiés depuis la dernière sauvegarde ?",
-    answers: [
-      "A. Complète",
-      "B. Incrémentielle",
-      "C. Miroir physique",
-      "D. Initiale",
-    ],
-    correct: 1,
-  },
-  {
-    question: "57. Qu'est-ce qu'une attaque par déni de service ?",
-    answers: [
-      "A. Rendre un service indisponible en le surchargeant",
-      "B. Créer une sauvegarde",
-      "C. Mettre à jour un serveur",
-      "D. Chiffrer un disque local",
-    ],
-    correct: 0,
-  },
-  {
-    question:
-      "58. Quel élément est souvent utilisé pour stocker des clés cryptographiques de manière sécurisée ?",
-    answers: [
-      "A. HSM",
-      "B. RAM ordinaire uniquement",
-      "C. Switch non administrable",
-      "D. Écran",
-    ],
-    correct: 0,
-  },
+{
+  question: "56. Quelle méthode SQL permet de trier les résultats d'une requête ?",
+  answers: [
+    "A. GROUP BY",
+    "B. ORDER BY",
+    "C. WHERE",
+    "D. DISTINCT"
+  ],
+  correct: 1,
+},
+{
+  question: "57. Quelle fonction PHP permet de vérifier si une variable est définie ?",
+  answers: [
+    "A. empty()",
+    "B. isset()",
+    "C. unset()",
+    "D. strlen()"
+  ],
+  correct: 1,
+},
+{
+  question: "58. Quelle instruction PHP permet de parcourir les éléments d'un tableau ?",
+  answers: [
+    "A. foreach",
+    "B. switch",
+    "C. include",
+    "D. return"
+  ],
+  correct: 0,
+},
   {
     question: "59. Quel est le but d'une politique de sécurité informatique ?",
     answers: [
@@ -548,12 +547,16 @@ const questions = [
     ],
     correct: 0,
   },
-  {
-    question:
-      "76. Quel outil est couramment utilisé pour conteneuriser des applications ?",
-    answers: ["A. Docker", "B. Excel", "C. Photoshop", "D. BIOS"],
-    correct: 0,
-  },
+{
+  question: "76. Quelle méthode JavaScript permet de convertir une chaîne JSON en objet JavaScript ?",
+  answers: [
+    "A. JSON.stringify()",
+    "B. JSON.parse()",
+    "C. JSON.convert()",
+    "D. JSON.object()"
+  ],
+  correct: 1,
+},
   {
     question: "77. Que signifie CI/CD ?",
     answers: [
@@ -627,16 +630,16 @@ const questions = [
     ],
     correct: 0,
   },
-  {
-    question: "86. Que signifie l'ACID en bases de données ?",
-    answers: [
-      "A. Atomicité, Cohérence, Isolation, Durabilité",
-      "B. Accès, Contrôle, Index, Données",
-      "C. Analyse, Calcul, Intégration, Déploiement",
-      "D. Authentification, Chiffrement, Identification, Disponibilité",
-    ],
-    correct: 0,
-  },
+{
+  question: "86. Quelle fonction SQL permet de calculer la moyenne des valeurs d'une colonne numérique ?",
+  answers: [
+    "A. SUM()",
+    "B. COUNT()",
+    "C. AVG()",
+    "D. MAX()"
+  ],
+  correct: 2,
+},
   {
     question: "87. Quelle commande SQL supprime une table ?",
     answers: ["A. DELETE", "B. DROP TABLE", "C. REMOVE ROW", "D. CLEAR"],
@@ -680,16 +683,16 @@ const questions = [
     ],
     correct: 0,
   },
-  {
-    question: "92. Quel document décrit les besoins fonctionnels d'un projet ?",
-    answers: [
-      "A. Cahier des charges",
-      "B. Fichier journal",
-      "C. Code source",
-      "D. Plan de sauvegarde",
-    ],
-    correct: 0,
-  },
+{
+  question: "92. Quelle commande Git permet de récupérer les modifications depuis un dépôt distant ?",
+  answers: [
+    "A. git push",
+    "B. git commit",
+    "C. git pull",
+    "D. git init"
+  ],
+  correct: 2,
+},
   {
     question:
       "93. Quel diagramme UML représente les interactions entre acteurs et système ?",
@@ -701,16 +704,16 @@ const questions = [
     ],
     correct: 0,
   },
-  {
-    question: "94. Quel indicateur mesure le respect des délais d'un projet ?",
-    answers: [
-      "A. Écart de planning",
-      "B. Adresse IP",
-      "C. Taux de compression",
-      "D. Débit Wi-Fi",
-    ],
-    correct: 0,
-  },
+{
+  question: "94. Quel rôle est responsable de la coordination des activités et du suivi d'un projet informatique ?",
+  answers: [
+    "A. Développeur",
+    "B. Chef de projet",
+    "C. Administrateur réseau",
+    "D. Technicien de maintenance"
+  ],
+  correct: 1,
+},
   {
     question:
       "95. Quelle pratique permet de vérifier qu'un logiciel répond aux exigences ?",
@@ -722,39 +725,36 @@ const questions = [
     ],
     correct: 0,
   },
-  {
-    question:
-      "96. Quel test vérifie le comportement d'une petite unité de code ?",
-    answers: [
-      "A. Test unitaire",
-      "B. Test de charge uniquement",
-      "C. Test d'acceptation uniquement",
-      "D. Test réseau",
-    ],
-    correct: 0,
-  },
-  {
-    question:
-      "97. Quel principe de conception vise à limiter les dépendances entre modules ?",
-    answers: [
-      "A. Faible couplage",
-      "B. Couplage fort",
-      "C. Duplication",
-      "D. Monolithisme obligatoire",
-    ],
-    correct: 0,
-  },
-  {
-    question:
-      "98. Quel système permet de gérer les utilisateurs et les permissions dans un environnement Windows Server ?",
-    answers: [
-      "A. Active Directory",
-      "B. Docker Hub",
-      "C. GitHub",
-      "D. Node.js",
-    ],
-    correct: 0,
-  },
+{
+  question: "96. Quel langage permet de créer des pages Web dynamiques côté serveur ?",
+  answers: [
+    "A. HTML",
+    "B. CSS",
+    "C. PHP",
+    "D. XML"
+  ],
+  correct: 2,
+},
+{
+  question: "97. Quelle structure de données permet de stocker des éléments sous forme de paires clé-valeur en Python ?",
+  answers: [
+    "A. List",
+    "B. Tuple",
+    "C. Dictionary",
+    "D. Set"
+  ],
+  correct: 2,
+},
+{
+  question: "98. En langage SQL, quelle commande permet de modifier la structure d'une table existante ?",
+  answers: [
+    "A. UPDATE",
+    "B. ALTER TABLE",
+    "C. MODIFY ROW",
+    "D. CHANGE DATABASE"
+  ],
+  correct: 1,
+},
   {
     question:
       "99. Quel service permet de centraliser l'authentification dans un domaine Windows ?",
