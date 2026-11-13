@@ -1,148 +1,144 @@
 const questions = [
-  {
-    question:
-      "1) Quelle est la définition du protocole de communication HTTP ?",
-    answers: [
-      "a) Protocole de transfert de fichiers",
-      "b) Protocole de test de transmission hypermédia",
-      "c) Protocole utilisé pour le transfert de courrier électronique",
-      "d) Protocole sécurisé pour échange d'informations critiques",
-      "e) Protocole grâce auquel un client web et un serveur web peuvent dialoguer",
-    ],
-    correct: 4,
-  },
-  {
-    question: "2) Qu'est-ce que le protocole HTTPS ?",
-    answers: [
-      "a) Le protocole HTTP en version multiposte",
-      "b) Une ancienne version du protocole HTTP",
-      "c) Un protocole d'accès aux vidéos numériques",
-      "d) La version sécurisée du protocole HTTP",
-      "e) Un langage de description de page comme le format HTML",
-    ],
-    correct: 3,
-  },
-  {
-    question:
-      "3) Dans la liste suivante, quel sigle ne désigne pas un protocole ?",
-    answers: ["a) POP", "b) HTTP", "c) SMTP", "d) TCP", "e) HTML"],
-    correct: 4,
-  },
-  {
-    question:
-      "4) Parmi ces protocoles, lesquels sont des protocoles de courrier électronique ?",
-    answers: ["a) IMAP", "b) POP", "c) HTTPS", "d) SMTP"],
-    correct: [0, 1, 3],
-  },
-  {
-    question: "5) Que désigne Intranet ?",
-    answers: [
-      "a) Une technique de sauvegarde de données dans une entreprise, sur un serveur spécialisé",
-      "b) Un réseau de fibres optiques installé dans un immeuble",
-      "c) Un réseau informatique utilisé à l'intérieur d'une entreprise utilisant les techniques de communication d'Internet",
-      "d) Un code de bonne conduite au sein d'une entreprise",
-      "e) Un ensemble de logiciels libres",
-    ],
-    correct: 2,
-  },
-  {
-    question: "6) Qu'est-ce que l'hameçonnage (phishing) ?",
-    answers: [
-      "a) Un procédé frauduleux permettant de collecter des informations personnelles",
-      "b) Une technique d'analyse du trafic réseau",
-      "c) Une méthode de recherche d'informations sur Internet",
-      "d) Un système d'envoi massif de courriers électroniques",
-      "e) Une procédure de collecte de données par formulaire sécurisé",
-    ],
-    correct: 0,
-  },
-  {
-    question:
-      "7) En matière de sécurité informatique, que désigne-t-on par cheval de Troie ?",
-    answers: [
-      "a) Un courrier électronique malveillant qui s'envoie lui-même aux adresses contenues dans tout le carnet d'adresses de l'ordinateur sur lequel il se trouve",
-      "b) Un logiciel malveillant qui s'installe discrètement sur l'ordinateur et collecte et envoie des informations personnelles à des organismes tiers",
-      "c) Un logiciel malveillant ayant l'apparence d'un logiciel inoffensif mais qui comporte des instructions nuisibles qui s'exécutent une fois le logiciel installé",
-      "d) Un logiciel malveillant qui se propage par courrier électronique en exploitant les failles des logiciels de messagerie",
-    ],
-    correct: 2,
-  },
-  {
-    question:
-      "8) Dans un tableur, que se passe-t-il si le résultat d'une formule affiche ###### ?",
-    answers: [
-      "a) Le format de nombre n'est pas compatible avec la donnée",
-      "b) La formule contient une erreur",
-      "c) La formule n'a pas de sens du point de vue mathématique",
-      "d) Il n'y a pas assez de mémoire pour que le logiciel fasse le calcul",
-      "e) La colonne est trop étroite pour afficher le résultat tout entier",
-    ],
-    correct: 4,
-  },
-  {
-    question:
-      "9) Dans un tableur, si on copie la formule =A$1*B4 de A4 en B5, quelle formule obtient-on en B5 ?",
-    answers: [
-      "a) =C$2*C5",
-      "b) =B2*C5",
-      "c) =B$2*C4",
-      "d) =B$1*C5",
-      "e) =C$1*C4",
-    ],
-    correct: 3,
-  },
-  {
-    question:
-      "10) Quels sont les deux critères utilisés pour choisir un support réseau parmi les différentes options ?",
-    answers: [
-      "a) Le nombre de périphériques intermédiaires installés sur le réseau",
-      "b) Le coût des périphériques finaux utilisés sur le réseau",
-      "c) L'environnement dans lequel le support sera installé",
-      "d) La distance sur laquelle le support peut transporter correctement un signal",
-      "e) Les types de données devant être priorisés",
-    ],
-    correct: [2, 3],
-  },
-  {
-    question:
-      "11) Quelle interface permet la gestion à distance d'un commutateur de couche 2 ?",
-    answers: [
-      "a) L'interface virtuelle du commutateur",
-      "b) L'interface du port de console",
-      "c) L'interface AUX",
-      "d) La première interface de port Ethernet",
-    ],
-    correct: 0,
-  },
-  {
-    question:
-      "12) Lorsque l'adressage IPv4 est configuré manuellement sur un serveur web, quelle propriété de la configuration IPv4 identifie la partie réseau et la partie hôte d'une adresse IPv4 ?",
-    answers: [
-      "a) L'adresse du serveur DNS",
-      "b) L'adresse du serveur DHCP",
-      "c) La passerelle par défaut",
-      "d) Le masque de sous-réseau",
-    ],
-    correct: 3,
-  },
-  {
-    question:
-      "13) Reportez-vous à l'illustration. Le serveur B tente de contacter l'hôte A. Quelles deux instructions identifient correctement l'adressage que le serveur B va générer dans le processus ?",
-    answers: [
-      "A) Serveur B va générer un paquet avec l'adresse IP de destination du routeur B",
-      "b) Serveur B va générer un paquet avec l'adresse IP de destination de l'hôte A",
-      "c) Serveur B va générer un paquet avec l'adresse MAC de destination du routeur B",
-      "d) Serveur B va générer un paquet avec l'adresse MAC de destination du routeur A",
-      "e) Serveur B va générer un paquet avec l'adresse IP de destination du routeur B",
-    ],
-    correct: [1, 2],
-  },
-  {
-    question:
-      "14) Quel protocole est attaqué lorsqu'un cybercriminel fournit une passerelle non valide afin de lancer une attaque de l'homme du milieu (Man-in-the-Middle) ?",
-    answers: ["a) HTTP ou HTTPS", "b) DHCP", "c) ICMP", "d) DNS"],
-    correct: 1,
-  },
+{
+  question: "1) Quelle est la définition du protocole de communication HTTP ?",
+  answers: [
+    "a) Protocole utilisé pour le transfert de courrier électronique",
+    "b) Protocole de transfert de fichiers",
+    "c) Protocole grâce auquel un client web et un serveur web peuvent dialoguer",
+    "d) Protocole sécurisé pour échange d'informations critiques",
+  ],
+  correct: 2,
+},
+{
+  question: "2) Qu'est-ce que le protocole HTTPS ?",
+  answers: [
+    "a) Une ancienne version du protocole HTTP",
+    "b) Un protocole de transfert de fichiers",
+    "c) La version sécurisée du protocole HTTP",
+    "d) Un langage de description de page comme HTML",
+  ],
+  correct: 2,
+},
+{
+  question: "3) Dans la liste suivante, quel sigle ne désigne pas un protocole ?",
+  answers: [
+    "a) SMTP",
+    "b) HTML",
+    "c) POP",
+    "d) TCP",
+  ],
+  correct: 1,
+},
+{
+  question: "4) Parmi ces protocoles, lequel est utilisé pour l'envoi de courrier électronique ?",
+  answers: [
+    "a) HTTPS",
+    "b) IMAP",
+    "c) SMTP",
+    "d) POP",
+  ],
+  correct: 2,
+},
+{
+  question: "5) Que désigne Intranet ?",
+  answers: [
+    "a) Un réseau de fibres optiques installé dans un immeuble",
+    "b) Un code de bonne conduite au sein d'une entreprise",
+    "c) Un réseau informatique utilisé à l'intérieur d'une entreprise utilisant les techniques de communication d'Internet",
+    "d) Un ensemble de logiciels libres",
+  ],
+  correct: 2,
+},
+{
+  question: "6) Quel est le rôle du CSS dans une page web ?",
+  answers: [
+    "a) Gérer les bases de données",
+    "b) Définir la présentation et le style des pages web",
+    "c) Assurer la communication entre le client et le serveur",
+    "d) Créer la structure du contenu HTML",
+  ],
+  correct: 1,
+},
+{
+  question: "7) Quelle propriété CSS permet de changer la couleur du texte ?",
+  answers: [
+    "a) background-color",
+    "b) font-size",
+    "c) color",
+    "d) text-align",
+  ],
+  correct: 2,
+},
+{
+  question: "8) Quelle propriété CSS permet de modifier la taille du texte ?",
+  answers: [
+    "a) color",
+    "b) font-size",
+    "c) background-color",
+    "d) text-align",
+  ],
+  correct: 1,
+},
+{
+  question: "9) Quelle propriété CSS permet de mettre un texte en gras ?",
+  answers: [
+    "a) font-style",
+    "b) text-decoration",
+    "c) font-weight",
+    "d) text-align",
+  ],
+  correct: 2,
+},
+{
+  question: "10) Quelle propriété CSS permet de définir la couleur de fond d'un élément HTML ?",
+  answers: [
+    "a) color",
+    "b) background-color",
+    "c) font-size",
+    "d) border-style",
+  ],
+  correct: 1,
+},
+{
+  question: "11) Quelle propriété CSS permet d'arrondir les coins d'un élément ?",
+  answers: [
+    "a) border-color",
+    "b) border-radius",
+    "c) border-width",
+    "d) border-style",
+  ],
+  correct: 1,
+},
+{
+  question: "12) Quelle instruction JavaScript permet d'afficher un message dans la console du navigateur ?",
+  answers: [
+    "a) document.write()",
+    "b) console.log()",
+    "c) alert()",
+    "d) prompt()",
+  ],
+  correct: 1,
+},
+{
+  question: "13) Quelle méthode JavaScript permet de convertir une chaîne de caractères en nombre entier ?",
+  answers: [
+    "a) parseInt()",
+    "b) toString()",
+    "c) parseFloat()",
+    "d) isNaN()",
+  ],
+  correct: 0,
+},
+{
+  question: "14) Quelle instruction permet de déclarer une variable en JavaScript ?",
+  answers: [
+    "a) print",
+    "b) var",
+    "c) echo",
+    "d) display",
+  ],
+  correct: 1,
+},
   {
     question:
       "15) Parmi ces caractéristiques, laquelle ne correspond pas aux concepts de l'approche orientée objet ?",
@@ -154,17 +150,16 @@ const questions = [
     ],
     correct: 2,
   },
-  {
-    question:
-      "16) Quel utilitaire permet de consulter les mots de passe Web stockés sur un ordinateur Windows 10 ?",
-    answers: [
-      "A) Comptes d'utilisateurs",
-      "B) Périphériques et imprimantes",
-      "C) Outil de gestion des identifiants",
-      "D) Centre Réseau et partage",
-    ],
-    correct: 2,
-  },
+{
+  question: "16) Quelle méthode JavaScript permet d'ajouter un élément à la fin d'un tableau ?",
+  answers: [
+    "a) pop()",
+    "b) shift()",
+    "c) push()",
+    "d) unshift()",
+  ],
+  correct: 2,
+},
   {
     question:
       "17) Quelle association entre les langages de script et leurs extensions est entièrement correcte ?",
@@ -176,65 +171,56 @@ const questions = [
     ],
     correct: 2,
   },
-  {
-    question:
-      "18) Dans quelles situations le technicien devra-t-il très probablement réinstaller complètement le système d'exploitation si une sauvegarde n'a pas été effectuée ?",
-    answers: [
-      "a) Un utilisateur a besoin d'accéder à une nouvelle imprimante",
-      "b) Le système d'exploitation existant est endommagé",
-      "c) Le logiciel de sécurité existant doit être mis à niveau",
-      "d) L'ordinateur est transféré sur un autre réseau",
-      "e) On installe un disque dur de rechange sur un ordinateur",
-    ],
-    correct: [1, 4],
-  },
-  {
-    question:
-      "19) Quels éléments sont des dispositifs de sécurité biométriques ?",
-    answers: [
-      "a) Lecteur d'empreintes digitales",
-      "b) Scanner de l'iris de l'œil",
-      "c) Carte à puce",
-      "d) Reconnaissance vocale",
-      "e) Jeton d'authentification",
-      "f) Mot de passe",
-    ],
-    correct: [0, 1, 3],
-  },
-  {
-    question:
-      "20) Une entreprise de sécurité tierce effectue l'audit de sécurité d'une société et lui recommande d'utiliser le protocole RDP (Remote Desktop Protocol). Quelles sont les caractéristiques du protocole RDP de Microsoft ?",
-    answers: [
-      "a) Le protocole RDP se connecte au port TCP 22",
-      "b) Le protocole RDP nécessite un client Windows",
-      "c) Le protocole RDP utilise une session chiffrée",
-      "d) RDP est un protocole de terminal virtuel de réseau de ligne de commande",
-      "e) Le protocole RDP se connecte au port TCP 3389",
-    ],
-    correct: [2, 4],
-  },
-  {
-    question:
-      "21) Un ordinateur peut envoyer une requête ping à l'extérieur du réseau local, mais il ne peut accéder à aucun service Web. Quelle est la cause la plus probable de ce problème ?",
-    answers: [
-      "a) Le pare-feu Windows bloque le port 80",
-      "b) Le pare-feu Windows bloque le port 23 par défaut",
-      "c) La carte réseau de l'ordinateur est défectueuse",
-      "d) Les paramètres BIOS ou CMOS bloquent l'accès au Web",
-    ],
-    correct: 0,
-  },
-  {
-    question:
-      "22) Un technicien remarque qu'une application ne répond pas aux commandes et que l'ordinateur semble répondre lentement lorsque les applications s'ouvrent. Quel est le meilleur outil d'administration à utiliser pour forcer la libération de ressources système à partir de l'application qui ne répond pas ?",
-    answers: [
-      "a) Gestionnaire des tâches",
-      "b) Ajouter ou supprimer des programmes",
-      "c) Observateur d'événements",
-      "d) Restauration du système",
-    ],
-    correct: 0,
-  },
+{
+  question: "18) Quel opérateur JavaScript permet de vérifier l'égalité stricte entre deux valeurs ?",
+  answers: [
+    "a) =",
+    "b) ==",
+    "c) ===",
+    "d) !=",
+  ],
+  correct: 2,
+},
+{
+  question: "19) Quelle fonction JavaScript permet de connaître la longueur d'une chaîne de caractères ?",
+  answers: [
+    "a) size()",
+    "b) length()",
+    "c) count()",
+    "d) indexOf()",
+  ],
+  correct: 1,
+},
+{
+  question: "20) Quelle méthode JavaScript permet de supprimer le dernier élément d'un tableau ?",
+  answers: [
+    "a) push()",
+    "b) shift()",
+    "c) pop()",
+    "d) unshift()",
+  ],
+  correct: 2,
+},
+{
+  question: "21) Quel événement JavaScript est déclenché lorsqu'un utilisateur clique sur un bouton ?",
+  answers: [
+    "a) onmouseover",
+    "b) onclick",
+    "c) onload",
+    "d) onchange",
+  ],
+  correct: 1,
+},
+{
+  question: "22) Quelle balise HTML permet de créer un lien hypertexte ?",
+  answers: [
+    "a) <img>",
+    "b) <a>",
+    "c) <p>",
+    "d) <link>",
+  ],
+  correct: 1,
+},
   {
     question:
       "23) Dans quel dossier les fichiers d'application des programmes 32 bits sont-ils généralement situés sur un ordinateur équipé de l'édition 64 bits de Windows 10 ?",
@@ -246,18 +232,16 @@ const questions = [
     ],
     correct: 3,
   },
-  {
-    question:
-      "24) Un utilisateur signale qu'un PC perd des fichiers, n'en ouvre pas certains et fonctionne au ralenti. Le technicien soupçonne que cela est lié au disque dur. Que faut-il faire pour protéger les données et déterminer l'origine du problème sans risquer une panne complète du disque ?",
-    answers: [
-      "a) Exécuter la commande format, puis remplacer le disque dur",
-      "b) Exécuter la commande chkdsk, puis format",
-      "c) Sauvegarder tous les fichiers importants, puis remplacer le disque dur",
-      "d) Sauvegarder tous les fichiers importants, puis exécuter chkdsk",
-      "e) Exécuter chkdsk, puis sauvegarder tous les fichiers importants",
-    ],
-    correct: 3,
-  },
+{
+  question: "24) Quelle balise HTML permet de créer une liste non ordonnée ?",
+  answers: [
+    "a) <ol>",
+    "b) <li>",
+    "c) <ul>",
+    "d) <dl>",
+  ],
+  correct: 2,
+},
   {
     question:
       "25) À quoi sert la clé primaire d'une table (attribut PRIMARY KEY en SQL) ?",
@@ -280,30 +264,26 @@ const questions = [
     ],
     correct: 2,
   },
-  {
-    question:
-      "27) Parmi les éléments ci-dessous, quelles sont les fonctions standards du langage SQL ?",
-    answers: [
-      "a) SUM",
-      "b) COUNT",
-      "c) MAX",
-      "d) RECHERCHEV",
-      "e) DATEDIF",
-      "f) AVG",
-    ],
-    correct: [0, 1, 2, 5],
-  },
-  {
-    question:
-      "28) Dans une base de données relationnelle, je souhaite sélectionner tous les enregistrements de la table nommée Produits. Choisissez la requête SQL convenable :",
-    answers: [
-      "a) SELECT DISTINCT id FROM Produits",
-      "b) SELECT * FROM Produits WHERE reference NOT NULL",
-      "c) SELECT * FROM Produits",
-      "d) SELECT * WHERE Produits",
-    ],
-    correct: 2,
-  },
+{
+  question: "27) Quelle commande SQL permet de supprimer une table d'une base de données ?",
+  answers: [
+    "a) DELETE",
+    "b) DROP",
+    "c) UPDATE",
+    "d) SELECT",
+  ],
+  correct: 1,
+},
+{
+  question: "28) Quelle requête SQL permet d'afficher tous les enregistrements de la table Produits ?",
+  answers: [
+    "a) SELECT * WHERE Produits",
+    "b) SELECT * FROM Produits",
+    "c) SELECT DISTINCT id FROM Produits",
+    "d) SELECT * FROM Produits WHERE reference IS NOT NULL",
+  ],
+  correct: 1,
+},
   {
     question:
       "29) Quel équipement réseau permet de connecter plusieurs ordinateurs dans un réseau local (LAN) ?",
@@ -369,12 +349,16 @@ const questions = [
     ],
     correct: 3,
   },
-  {
-    question:
-      "37) Quel type de logiciel malveillant chiffre les fichiers et demande une rançon ?",
-    answers: ["A) Ransomware", "B) Adware", "C) Pare-feu", "D) Pilote"],
-    correct: 0,
-  },
+{
+  question: "37) Quelle commande Linux permet d'afficher le contenu d'un répertoire ?",
+  answers: [
+    "A) pwd",
+    "B) mkdir",
+    "C) ls",
+    "D) cd",
+  ],
+  correct: 2,
+},
   {
     question:
       "38) Quel outil filtre le trafic entrant et sortant selon des règles de sécurité ?",
@@ -386,28 +370,26 @@ const questions = [
     ],
     correct: 1,
   },
-  {
-    question:
-      "39) Quel principe de sécurité consiste à accorder uniquement les droits nécessaires ?",
-    answers: [
-      "A) Disponibilité",
-      "B) Redondance",
-      "C) Moindre privilège",
-      "D) Compression",
-    ],
-    correct: 2,
-  },
-  {
-    question:
-      "40) Quel outil Windows permet de gérer les partitions et les volumes d'un disque ?",
-    answers: [
-      "A) Bloc-notes",
-      "B) Gestionnaire des tâches",
-      "C) Nettoyage de disque",
-      "D) Gestion des disques",
-    ],
-    correct: 3,
-  },
+{
+  question: "39) Quel mécanisme permet de protéger les données en les rendant illisibles sans une clé de déchiffrement ?",
+  answers: [
+    "A) Sauvegarde",
+    "B) Compression",
+    "C) Chiffrement",
+    "D) Défragmentation",
+  ],
+  correct: 2,
+},
+{
+  question: "40) Quel raccourci clavier permet d'ouvrir le Gestionnaire des tâches sous Windows ?",
+  answers: [
+    "A) Ctrl + C",
+    "B) Ctrl + Shift + Esc",
+    "C) Alt + F4",
+    "D) Windows + E",
+  ],
+  correct: 1,
+},
   {
     question:
       "41) Quel raccourci clavier permet d'ouvrir directement le Gestionnaire des tâches sous Windows ?",
@@ -532,18 +514,26 @@ const questions = [
     answers: ["A) SOMME()", "B) MIN()", "C) MOYENNE()", "D) NBVAL()"],
     correct: 2,
   },
-  {
-    question:
-      "58) Dans Excel, quelle référence de cellule est totalement absolue ?",
-    answers: ["A) A1", "B) A$1", "C) $A1", "D) $A$1"],
-    correct: 3,
-  },
-  {
-    question:
-      "59) Quel logiciel de la suite Microsoft Office est principalement utilisé pour créer des présentations ?",
-    answers: ["A) Word", "B) Excel", "C) PowerPoint", "D) Access"],
-    correct: 2,
-  },
+{
+  question: "58) Dans Excel, quel symbole permet de commencer une formule ?",
+  answers: [
+    "A) #",
+    "B) =",
+    "C) %",
+    "D) &",
+  ],
+  correct: 1,
+},
+{
+  question: "59) Quelle extension correspond généralement à un fichier PowerPoint moderne ?",
+  answers: [
+    "A) .docx",
+    "B) .xlsx",
+    "C) .pptx",
+    "D) .pdf",
+  ],
+  correct: 2,
+},
   {
     question:
       "60) Quel raccourci clavier permet de copier un élément sous Windows ?",
@@ -703,18 +693,26 @@ const questions = [
     answers: ["A) LIRE", "B) SAISIR", "C) ÉCRIRE", "D) TANT QUE"],
     correct: 2,
   },
-  {
-    question:
-      "86) Dans la programmation orientée objet, quel concept consiste à regrouper les données et les méthodes dans une même unité ?",
-    answers: ["A) Encapsulation", "B) Compilation", "C) Itération", "D) Tri"],
-    correct: 0,
-  },
-  {
-    question:
-      "87) En programmation orientée objet, quel concept permet à une classe de récupérer les caractéristiques d'une autre classe ?",
-    answers: ["A) Polymorphisme", "B) Héritage", "C) Boucle", "D) Déclaration"],
-    correct: 1,
-  },
+{
+  question: "86) En programmation orientée objet, quel concept permet de créer une nouvelle classe à partir d'une classe existante ?",
+  answers: [
+    "A) Polymorphisme",
+    "B) Héritage",
+    "C) Encapsulation",
+    "D) Compilation",
+  ],
+  correct: 1,
+},
+{
+  question: "87) En programmation orientée objet, quel concept permet à une même méthode d'avoir plusieurs comportements selon l'objet utilisé ?",
+  answers: [
+    "A) Héritage",
+    "B) Encapsulation",
+    "C) Polymorphisme",
+    "D) Compilation",
+  ],
+  correct: 2,
+},
   {
     question: "88) Quel est le rôle d'un constructeur dans une classe ?",
     answers: [
@@ -725,28 +723,26 @@ const questions = [
     ],
     correct: 1,
   },
-  {
-    question:
-      "89) Dans une base de données relationnelle, quel élément représente une ligne d'une table ?",
-    answers: [
-      "A) Un champ",
-      "B) Un enregistrement",
-      "C) Une colonne",
-      "D) Une clé étrangère",
-    ],
-    correct: 1,
-  },
-  {
-    question:
-      "90) Dans une base de données relationnelle, quel élément représente une colonne d'une table ?",
-    answers: [
-      "A) Un enregistrement",
-      "B) Une ligne",
-      "C) Un attribut",
-      "D) Une relation",
-    ],
-    correct: 2,
-  },
+{
+  question: "89) Dans une base de données relationnelle, quel élément permet d'identifier de manière unique chaque enregistrement d'une table ?",
+  answers: [
+    "A) Clé primaire",
+    "B) Clé étrangère",
+    "C) Champ texte",
+    "D) Index secondaire",
+  ],
+  correct: 0,
+},
+{
+  question: "90) Quel type de clé permet de créer un lien entre deux tables dans une base de données relationnelle ?",
+  answers: [
+    "A) Clé primaire",
+    "B) Clé étrangère",
+    "C) Clé unique",
+    "D) Clé composée",
+  ],
+  correct: 1,
+},
   {
     question: "91) Quel est le rôle d'une clé étrangère (FOREIGN KEY) ?",
     answers: [
@@ -791,12 +787,16 @@ const questions = [
     answers: ["A) HTML", "B) SQL", "C) CSS", "D) XML"],
     correct: 1,
   },
-  {
-    question:
-      "97) Quelle topologie réseau relie tous les équipements à un équipement central ?",
-    answers: ["A) Bus", "B) Anneau", "C) Étoile", "D) Maillée"],
-    correct: 2,
-  },
+{
+  question: "97) Quel équipement réseau permet de connecter plusieurs ordinateurs dans un réseau local (LAN) ?",
+  answers: [
+    "A) Scanner",
+    "B) Switch",
+    "C) Modem",
+    "D) Imprimante",
+  ],
+  correct: 1,
+},
   {
     question: "98) Combien de bits contient une adresse IPv4 ?",
     answers: ["A) 16 bits", "B) 32 bits", "C) 64 bits", "D) 128 bits"],
